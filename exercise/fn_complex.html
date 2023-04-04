@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return 연습문제</title>
+    <script>
+        function fnComplex(x, y){
+            if(x == y){
+                let result = x * y;
+                return result;
+            }
+            else{
+                let result = x + y;
+                return result;
+            }
+        }
+        let result = fnComplex(10, 10);
+        document.write("num1 = " + result + "<br>");
+
+        let result2 = fnComplex(5, 10);
+        document.write("num2 = " + result + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -3,7 +3,9 @@ let customer = prompt("입장객의 수는 몇명인가요?"); //입장객 수
         let rowNum;        //행(줄)의 수
 
         // 나머지가 있는지 없는지 처리하는 것이 중요, %연산자 사용
-        if(customer == null || colNum == null){
+        if(customer == null || colNum == null
+            || isNaN(customer) || inNaN(colNum))
+            {
             document.write("입력이 취소되었습니다.");
         }
         else{
