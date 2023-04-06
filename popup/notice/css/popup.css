@@ -1,0 +1,30 @@
+#container{
+    width: 360px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid blue; border-radius: 10px;
+    line-height: 2;
+    position: relative;
+}
+.bold{
+    font-weight: bold;
+    color: red;
+}
+ul li{
+    list-style:;
+}
+h2, p{margin-left: 20px}
+button{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    background-color: white;
+    border: white;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

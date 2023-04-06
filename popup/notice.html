@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지 사항</title>
+    <script>
+        window.open("notice.html","팝업창",
+                "width=400, height=500, top=100, left=150");
+    </script>
+    <style>
+        #content{
+            border: 5px double rgb(176, 212, 227);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h1{padding-left: 20px;}
+        ul li{
+            list-style-type: none;
+            margin: 20px;
+        }
+        button{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>공지 사항</h1>
+        <ul>
+            <li>항목 1</li>
+            <li>항목 2</li>
+            <li>항목 3</li>
+            <li>항목 4</li>
+        </ul>
+        <button onclick="window.close()">닫기</button>
+    </div>
+
+</body>
+</html>

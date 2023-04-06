@@ -22,11 +22,12 @@
             //  <li>Water</li>
 
             // <ul>안에 포함시키기
-            let list = document.getElementById("myList");
+            // let list = document.getElementById("myList");
+            document.getElementById("myList").appendChild(newLi);
             
             //list.appendChild(newLi);
             //특정 위치에 추가
-            list.insertBefore(newLi, list.childNodes[2]);
+            list.insertBefore(newLi, list.appendChildNodes[2]);
         }
     </script>
 </body>
