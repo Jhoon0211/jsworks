@@ -1,0 +1,9 @@
+#item{
+    width: 400px;
+    position: relative;
+}
+#item .btn_show{
+    position:absolute;
+    left: 10px;
+    bottom: 15px;
+}

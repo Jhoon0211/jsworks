@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 객체 - map() 함수</title>
+</head>
+<body>
+    <h2>map() 함수 - 새로운 배열을 생성해 줌</h2>
+    <p id="demo"></p>
+
+    <script>
+        // {} = 배열 입력
+        /* //객체 = {속성 : 속성값}
+        let odj = {과일 : 'apple', 차 : 'sonata'}
+        
+        // 사용시 '.' 연산자로 접근 (obj.과일)
+        console.log(obj.과일) */
+
+        const persons = [
+            {이름 : 'Jobs', 성 : 'Steve'},
+            {이름 : '그래', 성 : '장'},
+            {이름 : 'Gates', 성 : 'Bill'},
+        ];
+
+        /* console.log(persons[0].성 + " : " + persons[0].이름); */
+        // persons 객체 전부 표출 = 'i '사용
+        for(let i=0; i<persons.length; i++){
+            console.log(persons[i].성 + " : " + persons[i].이름);
+        }
+
+        //map() 새로운 배열 생성
+        let arr = persons.map(myFunction);
+        console.log(arr);
+
+        document.getElementById('demo').innerHTML = arr;
+
+        // item = persons 각 요소
+        function myFunction(item){
+            // join = 문자열 연결(구분 기호)
+            return [item.성, item.이름].join(" ");
+        }
+
+    </script>
+</body>
+</html>

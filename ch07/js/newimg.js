@@ -6,10 +6,11 @@ function addContents(){
     // div안에 p태그 포함
     document.getElementById("info").appendChild(newP);
 
+    // <img 태그>
     let newImg = document.createElement("img");
     let src = document.createAttribute("src");
 
-    //src 속성
+    // src 속성
     src.value = "images/coffee-blue.jpg";
     newImg.setAttributeNode(src);
 
